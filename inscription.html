@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"></style>
+	<title>BBiblio - Formulaire inscription</title>
+</head>
+	<body>
+
+	<div class="banniere">
+		<a href="index.html">
+			<img class="accueil" src="img/accueil.png">
+		</a>
+	<div class="menu">
+		<ul>
+			<li>
+				<a href="reglement.html"><img class="reglement" src="img/reglement.png"></a>
+			</li>
+			<li>
+				<a href="concours-2021.html">
+				<img class="concours-2021" src="img/concours-2021.png"></a>
+			</li>
+		</ul>
+	</div>
+	<div class="connexion">
+		<form class="connexForm">
+			<label>E-Mail :
+				<input type="text" class="encadre" name="username" required>
+			</label>
+			<label>Mot-de-passe :
+				<input type="password" class="encadre" name="password" required>
+			</label>
+			<div class="bouton-co">
+				<input type="button" class="bouton" name="" value="Inscription"onclick="window.location.href = 'inscription.html';">
+				<input type="submit" class="bouton" name="" value="Connexion">
+			</div>
+		</form>
+	</div>
+	</div>
+
+	<div class="barre">
+		<span id="car"></span>
+		<span>Fermeture inscription le: 01/10/2021</span>
+	</div>
+
+
+	<div class="contenu">
+		<h1>Inscription</h1>
+	<form id="formInscript" method="GET" action="index.html">
+		<div class="colGauche">
+			<select id="sexe" name="sexe">
+				<option value="Madame">Madame</option>
+				<option value="Monsieur">Monsieur</option>
+			</select>
+			<input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+			<input type="email" id="email" name="email" placeholder="E-Mail" required>
+			<input type="password" id="mdp" name="password" placeholder="Mot-de-passe" required>
+			<span id="msg">Votre mot de passe doit contenir au minimum 10 caractères, 1 majuscule, 1 minuscule et 1 chiffre</span>
+		</div>
+		<div class="colDroite">
+			<select id="status" name="status">
+				<option value="Auteur">Auteur</option>
+				<option value="Jury">Jury</option>
+			</select>
+			<input type="text" name="nom" placeholder="Nom" required>
+			<input type="email" id="email2" name="confirmEmail" placeholder="Confirmer l'e-mail" required>
+			<input type="password" id="mdp2" name="password" placeholder="Confirmer le mot-de-passe" onkeyup="verification2" required>
+			<input type="submit" id="submit" value="Valider" onclick="verification(event)">
+	</div>
+	</form>
+		</div>
+						<!-- Après validation du formulaire, 
+						un administrateur vérifiera et validera le compte ou non-->
+	<div class="pied">
+		<span class="spied">BBiblio</span>
+		<span class="spied2">Copyright 2021</span>
+	</div>
+	<script src="JavaScript.js"></script>
+	</body>
+</html>
