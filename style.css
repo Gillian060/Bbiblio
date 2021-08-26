@@ -265,6 +265,14 @@ p
 	padding-right: 15%
 }
 
+.bPart
+{
+	padding: 15px 85px;;
+	font-size: 20px;
+	margin: 10%;
+	border-color: black;
+}
+
 /* PAGE AUTEUR */
 
 .grid-container
