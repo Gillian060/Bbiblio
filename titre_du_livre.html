@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<title>BBiblio - Gagnant</title>
+	<title>BBiblio - Titre_du_livre</title>
 </head>
 	<body>
 
@@ -57,26 +57,16 @@
 				</div>
 		</div>
 	</div>
-	<div class="bloc-droit">
-        <p class="tri">
-			
-			
-			
-			
-			
-			Reseaux
-			Sociaux</p>
-    </div>
 	<div class="contenu">
 		<h1 id="2020">Titre du livre</h1>
 		<div class="livre">
 			<p class="flotte2"><img src="img\illustration2.jpg"></p>
 			<p class="info-livre">	Auteur: Nom Prénom
 				Editeur: Nom
-				Catégorie: Roman Français
+				Catégorie: catégorie
 				Nombre de pages: 200
-
-				Résumé: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				<a href="fichier.pdf">TELECHARGER</a>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
 				when an unknown printer took a galley of type and scrambled it to make a type specimen 
 				book. It has survived not only five centuries, but also the leap into electronic typesetting, 
@@ -84,10 +74,69 @@
 				It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
 				and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 			</p>
-			<input type="button" onclick="window.location.href = 'lien_boutique.html';" value="Acheter"/>
-			<input type="button" onclick="window.location.href = 'lien_partage.html';" value="Partager"/>
-			<!--Bouton qui permet de partager sur les reseaux sociaux-->
 		</div>
+        <div class="vote">
+			<label class="test">Illustration :
+            <select id="vote1" name="Illustration">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select>
+			</label>
+			<label>Émotion :
+				<select id="vote2" name="emotion">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+				</label>
+				<label class="test2">Mise en page :
+					<select id="vote3" name="miseEnPage">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+				</label>
+				<label>Style :
+					<select id="vote4" name="style">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+				</label>
+        </div>
 	</div>
 	<div class="pied">
 		<span class="spied">BBiblio</span>
